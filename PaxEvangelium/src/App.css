@@ -1,0 +1,13 @@
+:root {
+    --imgSize: 250px;
+}
+
+body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+div { text-align: center; }
+h1 { font-size: 3rem; color: #333; }
+p { color: #666; }
+
+.logo {
+    width: var(--imgSize);
+    height: var(--imgSize);
+}
