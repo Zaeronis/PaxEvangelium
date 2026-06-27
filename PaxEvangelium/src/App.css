@@ -2,10 +2,10 @@
     --imgSize: 250px;
 }
 
-body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f4f4f9; }
+body { font-family: sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #8a8a8a; }
 div { text-align: center; }
 h1 { font-size: 3rem; color: #333; }
-p { color: #666; }
+p { color: #ece8e8; }
 
 .logo {
     width: var(--imgSize);

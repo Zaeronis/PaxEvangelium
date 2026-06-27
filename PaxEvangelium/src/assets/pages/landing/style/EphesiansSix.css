@@ -1,0 +1,40 @@
+.verse {
+    font-weight: 600;
+    color: #000;
+    line-height: 2;
+
+}
+
+.verseName {
+    text-decoration: underline;
+    font-size: 1.4rem;
+}
+
+.pax,
+.title {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+
+    background: linear-gradient(
+            135deg,
+            #bf953f 0%,
+            #fcf6ba 25%,
+            #b38728 50%,
+            #fbf5b7 75%,
+            #aa771c 100%
+    );
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+
+    filter: drop-shadow(0 3px 0 #a38b32)
+    drop-shadow(0 5px 4px rgba(0,0,0,0.4));
+}
+
+.title {
+    font-size: 4rem;
+}
