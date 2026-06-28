@@ -10,7 +10,7 @@ export default function Landing() {
             <div className="landingTop">
                 <div className="landingTopLeft">
                     <p className="title">
-                        E-Vangelia
+                        E-Vangelium
                         <span className="subtitle">
                             Coming Soon
                         </span>
