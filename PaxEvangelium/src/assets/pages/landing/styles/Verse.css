@@ -5,12 +5,12 @@
 }
 
 .verseBlock {
-    color: var(--text-main);
+    color: var(--text-primary);
     margin-right: 10px;
 }
 
 .verseInline {
-    color: var(--text-main);
+    color: var(--text-primary);
     margin-right: 10px;
     display: inline;
 }

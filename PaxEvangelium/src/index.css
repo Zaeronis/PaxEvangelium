@@ -1,13 +1,8 @@
 :root {
-    /* Background & Cards */
     --bg-color: #0c0a0a;
-    --card-bg: rgba(139, 0, 0, 0.05);
-
-    /* Glows */
+    --card-bg: trasnparent;
     --glow-1: 255 255 255; --glow-2: 255 215 0;
     --glow-3: 255 248 220; --glow-4: 218 165 32;
-
-    /* UI System */
     --text-primary: #fffaf0;
     --text-secondary: #b8a6a6;
     --border-style: 3px solid transparent;
@@ -20,7 +15,6 @@
     font-family: 'Playfair Display', serif;
 }
 
-/* 1. Body and Container Setup */
 body {
     margin: 0;
     padding: 0;
@@ -36,7 +30,6 @@ body {
 
 }
 
-/* Container holds everything behind your content */
 .glare-container {
     position: fixed;
     inset: 0;
@@ -49,11 +42,10 @@ body {
     position: absolute;
     border-radius: 50%;
     filter: blur(8vw);
-    opacity: 0.3; /* Increased for brightness */
-    mix-blend-mode: lighten; /* 'Lighten' is much brighter than 'screen' */
+    opacity: 0.3;
+    mix-blend-mode: lighten;
 }
 
-/* Increased speed by reducing duration values */
 .g1 { width: 14vw; height: 14vw; background: rgb(var(--glow-1)); top: 10%; left: 10%; animation: drift-1 18s infinite ease-in-out alternate; }
 .g2 { width: 8vw; height: 8vw; background: rgb(var(--glow-2)); top: 60%; left: 80%; animation: drift-2 22s infinite ease-in-out alternate; }
 .g3 { width: 16vw; height: 16vw; background: rgb(var(--glow-3)); top: 80%; left: 40%; animation: drift-3 25s infinite ease-in-out alternate; }
@@ -62,7 +54,6 @@ body {
 .g6 { width: 10vw; height: 10vw; background: rgb(var(--glow-2)); top: 70%; left: 10%; animation: drift-6 20s infinite ease-in-out alternate; }
 .g7 { width: 12vw; height: 12vw; background: rgb(var(--glow-3)); top: 30%; left: 50%; animation: drift-7 17s infinite ease-in-out alternate; }
 
-/* Keep the same drift vectors so they still cross the full screen */
 @keyframes drift-1 { 0% { transform: translate(0,0); } 100% { transform: translate(60vw, 40vh); } }
 @keyframes drift-2 { 0% { transform: translate(0,0); } 100% { transform: translate(-70vw, 20vh); } }
 @keyframes drift-3 { 0% { transform: translate(0,0); } 100% { transform: translate(20vw, -50vh); } }

@@ -1,27 +1,30 @@
 .card {
+    position: relative;
     color: var(--text-primary);
-    background: var(--card-bg);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border-radius: 16px;
     padding: 25px;
-
-    /* Apply the variable */
-    border: var(--border-style);
-
-    /* Apply gradient ONLY if it exists in the theme */
-    background-image:
-            linear-gradient(var(--bg-color), var(--bg-color)),
-            var(--border-gradient, none);
-    background-origin: border-box;
-    background-clip: padding-box, border-box;
-
-    box-shadow:
-            0 10px 30px -5px rgba(0, 0, 0, 0.5),
-            inset 0 1px 2px rgba(255, 255, 255, 0.4);
+    border-radius: 16px;
+    z-index: 1;
+    background: rgba(12, 10, 10, 0.15);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.5);
 }
 
-/* Add this to your typography for the "radiant" look */
-.card h1, .card h2 {
-    text-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+.card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 16px;
+    padding: 3px;
+    background: var(--border-gradient);
+    -webkit-mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    -webkit-mask-composite: dest-out;
+    mask:
+            linear-gradient(#fff 0 0) content-box,
+            linear-gradient(#fff 0 0);
+    mask-composite: exclude;
+    pointer-events: none;
+    z-index: -1;
 }
