@@ -1,7 +1,7 @@
 import './Landing.css'
 import Card from "../../global/com/Card.jsx";
-import Excerpt from "./com/Excerpt.jsx";
-import {Eph6, V13_17} from "../../global/data/excerpts/ephesians6.13-17.js";
+import Excerpt from "../../global/com/Excerpt.jsx";
+import { Isa52, V7 } from "../../global/data/verses/isaiah52_7.js";
 
 
 export default function Landing() {
@@ -21,8 +21,8 @@ export default function Landing() {
                         className="excerptContainer"
                     >
                         <Excerpt
-                            title={Eph6}
-                            excerpt={V13_17}
+                            title={Isa52}
+                            excerpt={V7}
                             inline={true}
                         />
                     </Card>
