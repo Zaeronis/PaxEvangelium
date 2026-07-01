@@ -14,25 +14,18 @@ export default function Landing() {
                         <span className="subtitle">
                             Coming Soon
                         </span>
-                        <br />
-                        <br />
                     </p>
-                    <Card
-                        className="excerptContainer"
-                    >
-                        <Excerpt
-                            title={Isa52}
-                            excerpt={V7}
-                            inline={true}
-                        />
-                    </Card>
+                    <Excerpt
+                        title={Isa52}
+                        excerpt={V7}
+                        inline={true}
+                    />
                 </div>
                 <div>
                     <img
                         className="paxLogo"
                         src="./pax.png"
-                        alt="Image"
-                    />
+                        alt="Pax Evangelium"/>
                 </div>
             </div>
         </div>
